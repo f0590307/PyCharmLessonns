@@ -1,6 +1,6 @@
 def send_email(message, recipient, *, sender='university.help@gmail.com'):
     domain = '.com', '.ru', '.net'
-    if '@' in recipient and sender.find('@') and recipient.endswith(domain) and sender.endswith(domain):
+    if '@' in recipient and '@' in sender and recipient.endswith(domain) and sender.endswith(domain):
         if sender == recipient:
             print('Нельзя отправить письмо самому себе!')
         else:
